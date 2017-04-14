@@ -32,7 +32,7 @@ def downloadXkcd(startComic, endcomic):
                 res = requests.get(comicUrl)
                 res.raise_for_status()
             except requests.exceptions.MissingSchema:
-                Print('Missing schema.')
+                print('Missing schema.')
                 # skip this comic
                 continue
 
